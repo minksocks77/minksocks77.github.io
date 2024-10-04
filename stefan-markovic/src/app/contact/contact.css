@@ -1,0 +1,81 @@
+.contact-page {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-page .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.contact-page .container .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6em;
+}
+
+.contact-page .container .col:nth-child(1) {
+  flex: 1;
+}
+
+.contact-page .container .col:nth-child(2) {
+  flex: 1.2;
+}
+
+.contact-page .title {
+  margin-bottom: 1em;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.contact-page .item {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.contact-page .item p,
+.contact-page .item p a {
+  font-size: 24px;
+  color: var(--text);
+}
+
+.contact-header {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.contact-header h1 {
+  position: relative;
+  transform: translateY(64px);
+  will-change: transform;
+}
+
+.contact-page .item p {
+  position: relative;
+  transform: translateY(28px);
+  will-change: transform;
+}
+
+.contact-page .title p {
+  position: relative;
+  transform: translateY(24px);
+  font-size: 20px;
+  will-change: transform;
+}
+
+@media (max-width: 900px) {
+  .contact-page {
+    height: 150%;
+  }
+
+  .contact-page .container {
+    flex-direction: column-reverse;
+    padding: 8em 2em 4em 2em;
+    gap: 0em;
+  }
+
+  .contact-page .item p,
+  .contact-page .title p,
+  .contact-page .item p a {
+    font-size: 16px;
+  }
+}

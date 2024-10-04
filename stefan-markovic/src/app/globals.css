@@ -1,0 +1,135 @@
+:root {
+  --bg: #0f0f0f;
+  --text: #fff;
+  --text-secondary: #555555;
+  --text-darker: #2f2f2f;
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-weight: 200;
+  font-style: normal;
+  src: url(./fonts/PPNeueMontreal-Thin.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-weight: 300;
+  font-style: normal;
+  src: url(./fonts/PPNeueMontreal-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-weight: 400;
+  font-style: normal;
+  src: url(./fonts/PPNeueMontreal-Book.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-weight: 500;
+  font-style: normal;
+  src: url(./fonts/PPNeueMontreal-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-weight: 600;
+  font-style: normal;
+  src: url(./fonts/PPNeueMontreal-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-weight: 700;
+  font-style: normal;
+  src: url(./fonts/PPNeueMontreal-Bold.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PP Neue Montreal";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  padding: 12em 2em 4em 2em;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  color: var(--text);
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  color: var(--text);
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  color: var(--text);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.005em;
+}
+
+p {
+  color: var(--text-secondary);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -0.0025em;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -0.0025em;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p,
+  a {
+    font-size: 14px;
+  }
+}

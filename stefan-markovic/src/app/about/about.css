@@ -1,0 +1,104 @@
+.about-intro {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  gap: 8em;
+}
+
+.about-portrait-img {
+  flex: 1;
+}
+
+.about-portrait {
+  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+.about-copy-wrapper {
+  flex: 1.8;
+}
+
+.about-copy-wrapper h1 {
+  margin-bottom: 2em;
+}
+
+.about-copy-wrapper h3 {
+  margin-bottom: 0.5em;
+}
+
+.about-intro .line-wrapper,
+.about-intro .about-copy-title,
+.cv-header .line-wrapper,
+.cv-name h3 .line-wrapper,
+.cv-year .line-wrapper {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.cv-header .line-wrapper span {
+  position: relative;
+  transform: translateY(70px);
+  will-change: transform;
+}
+
+.cv-name h3 .line-wrapper span,
+.cv-year h3 .line-wrapper span {
+  position: relative;
+  transform: translateY(70px);
+  will-change: transform;
+}
+
+.about-intro .about-copy-title h1 {
+  position: relative;
+  transform: translateY(70px);
+  will-change: transform;
+}
+
+.about-intro .line-wrapper span {
+  position: relative;
+  transform: translateY(30px);
+  will-change: transform;
+}
+
+.about-hero-img {
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+  margin: 8em 0;
+}
+
+.cv-wrapper {
+  width: 85%;
+  margin: 0 auto 16em auto;
+}
+
+.cv-wrapper .cv-header {
+  margin-bottom: 2em;
+}
+
+.cv-item {
+  width: 100%;
+  padding: 1.25em 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  border-bottom: 1px solid var(--text-darker);
+}
+
+.cv-wrapper h3 {
+  font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  .about-intro {
+    width: 100%;
+    flex-direction: column;
+    gap: 8em;
+  }
+
+  .about-copy-wrapper h1 {
+    margin-bottom: 1em;
+  }
+
+  .cv-wrapper {
+    width: 100%;
+  }
+}

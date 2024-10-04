@@ -1,0 +1,69 @@
+.project-page-title,
+.next-project-title {
+  width: 50%;
+  margin: 1em auto;
+  text-align: center;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.next-project-title {
+  margin: 1em auto 12em auto;
+}
+
+.project-page-title h1 {
+  position: relative;
+  transform: translateY(64px);
+  will-change: transform;
+}
+
+.project-date {
+  text-align: center;
+  margin: 2em 0 4em 0;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.next-project {
+  text-align: center;
+  margin: 6em 0 0 0;
+}
+
+.project-date p {
+  position: relative;
+  transform: translateY(24px);
+  will-change: transform;
+}
+
+.project-page .img {
+  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+.project-content {
+  width: 85%;
+  margin: 2em auto;
+}
+
+.project-content .img {
+  width: 100%;
+  height: 600px;
+  margin: 2em 0 4em 0;
+}
+
+.project-page .copy {
+  width: 100%;
+  margin: 8em 0;
+}
+
+.project-page .copy h3 .line {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@media (max-width: 900px) {
+  .project-content {
+    width: 100%;
+  }
+
+  .project-page-title,
+  .next-project-title {
+    width: 100%;
+  }
+}

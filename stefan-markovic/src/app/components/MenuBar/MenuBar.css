@@ -1,0 +1,29 @@
+.menu-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.menu-toggle-wrapper,
+.logo,
+.portfolio-year {
+  position: relative;
+  flex: 1;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-year {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
